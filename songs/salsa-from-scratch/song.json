@@ -1,0 +1,63 @@
+{
+  "name": "Salsa from scratch",
+  "bpm": 180,
+  "tracks": [
+    {
+      "id": "d1",
+      "name": "2-3 clave",
+      "kind": "percusion",
+      "code": "s \"<[~ claves:1 claves:1 ~] [claves:1 ~ ~ claves:1 ~ ~ claves:1 ~]>\" # gain 1",
+      "muted": false
+    },
+    {
+      "id": "d2",
+      "name": "Congas (tumbao)",
+      "kind": "percusion",
+      "code": "mask \"<f!4 t!12>\" $ s \"congas:0 congas:1 congas:12 congas:1 congas:0 congas:1 congas:6 congas:22\" # gain \"0.75 0.65 1 0.65 0.75 0.65 1 1\" # pan 0.4",
+      "muted": false
+    },
+    {
+      "id": "d3",
+      "name": "Bongo (martillo)",
+      "kind": "percusion",
+      "code": "mask \"<f!4 t!4 f!8>\" $ s \"bongos:0 bongos:6 bongos:2 bongos:6 bongos:0 bongos:6 bongos:16 bongos:7\" {- # gain \"0.95 0.75 0.9 0.75 0.95 0.75 1 0.75\" -} # pan 0.6",
+      "muted": false
+    },
+    {
+      "id": "d4",
+      "name": "Upright bass (tumbao)",
+      "kind": "bajo",
+      "code": "mask \"<f!4 t!12>\" $ n \"<[~ ~ ~ e3 ~ ~ d3 ~] [~ ~ ~ a2 ~ ~ e3 ~] [~ ~ ~ b2 ~ ~ d3 ~] [~ ~ ~ a2 ~ ~ a2 ~]>\" # s \"acoustic_bass_fluid\" # legato 3 # gain 0.95",
+      "muted": false
+    },
+    {
+      "id": "d5",
+      "name": "Piano (guajeo)",
+      "kind": "armonia",
+      "code": "superimpose (|- n 12) $ n \"<[~ c6 a5 ~ e6 c6 ~ f6] [~ d6 a5 ~ f6 d6 ~ e6] [~ b5 gs5 ~ d6 b5 ~ f6] [~ d6 a5 ~ f6 d6 ~ e6]>\" # s \"bright_acoustic_piano_fluid\" # legato 0.9 # gain 0.6 # room 0.89 # lpf 4000",
+      "muted": false
+    },
+    {
+      "id": "d6",
+      "name": "Bongo bell",
+      "kind": "percusion",
+      "code": "mask \"<f!8 t!8>\" $ s \"[cowbells:11 cowbells:9]*4\" # gain \"[1 0.7]*4\" # pan 0.6",
+      "muted": false
+    },
+    {
+      "id": "d7",
+      "name": "Trombones (moña)",
+      "kind": "melodia",
+      "code": "mask \"<t!4 f!8 t!4>\" $ n \"<[[c4,e4] ~ [c4,e4] ~ [b3,d4] [c4,e4] ~ ~] ~ [[d4,gs4] ~ [d4,gs4] ~ [d4,f4] [b3,e4] ~ ~] ~>\" # s \"trombone_fluid\" # legato 0.7 # gain 0.9 # room 0.2 # pan 0.45",
+      "muted": false
+    },
+    {
+      "id": "d8",
+      "name": "Coro",
+      "kind": "melodia",
+      "code": "mask \"<f!8 t!4 f!2 t!2>\" $ n \"<~ [~ ~ [d5,f5] [d5,f5] ~ [c5,e5] ~ ~]>\" # s \"choir_aahs_fluid\" # legato 0.9 # gain 0.9 # room 0.3",
+      "muted": false
+    }
+  ],
+  "projectId": "p179551407450411"
+}
