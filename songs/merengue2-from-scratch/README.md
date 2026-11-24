@@ -1,0 +1,15 @@
+# Merengue 2
+
+**140 BPM** · 7 pistas
+
+| Pista | Nombre | Código |
+|---|---|---|
+| `d1` | Güira | `s "[guiro:3 ~ guiro:1 guiro:2]*4" # gain "[1.15 0 0.75 0.65]*4" # cut 1 # hpf 2500 # pan 0.65` |
+| `d2` | Tambora | `mask "<f!4 t!12>" $ s "[woodblock_vcsl:6 ~ woodblock_vcsl:6 woodblock_vcsl:7] [woodblock_vcsl:6 ~ congas:22 ~] [woodblock_vcsl:6 ~ woodblock_vcsl:6 woodblock_vcsl:7] [congas:6 ~ congas:22 congas:22]" # gain 0.9 # room 0.15` |
+| `d3` | Kick | `mask "<f!4 t!8 f!2 t!2>" $ s "bd*4" # gain "[0.9 0.7]*2" # lpf 2500` |
+| `d4` | Electric bass | `mask "<f!4 t!12>" $ n "<[c3 ~ ~ ~ ~ ~ g2 ~ c3 ~ ~ ~ g2 ~ e3 ~] [f3 ~ ~ ~ ~ ~ c3 ~ f3 ~ ~ ~ c3 ~ fs3 ~] [g3 ~ ~ ~ ~ ~ d3 ~ g3 ~ ~ ~ d3 ~ b2 ~] [c3 ~ ~ ~ ~ ~ g2 ~ c3 ~ ~ ~ g2 ~ ~ ~]>" # s "electric_bass_finger_fluid" # legato 0.7 # gain 0.9` |
+| `d5` | Piano | `mask "<t!12 f!2 t!2>" $ n "<[g4 [c5 e5] g4 [c5 e5] g4 c5 e5 [g5 e5]] [a4 [c5 f5] a4 [c5 f5] a4 c5 f5 [a5 f5]] [g4 [b4 f5] g4 [b4 f5] g4 b4 d5 [f5 d5]] [g4 [c5 e5] g4 [c5 e5] g4 c5 e5 [g5 e5]]>" # s "bright_acoustic_piano_fluid" # legato 0.6 # gain "[0.9 0.75]*4" # room 0.2` |
+| `d6` | Trumpets | `mask "<t!4 f!4 t!4 f!2 t!2>" $ n "<[g5 ~ c6 g5 ~ e6 ~ g6] ~ [f5 ~ b5 f5 ~ d6 ~ f6] ~>" # s "trumpet_fluid" # legato 0.8 # gain 0.9 # room 0.25` |
+| `d7` | Alto sax | `mask "<f!8 t!4 f!2 t!2>" $ n "<~ [c6 ~ a5 ~ f5 g5 a5] ~ [b5 ~ g5 ~ e5 f5 g5 ~]>" # s "alto_sax_fluid" # legato 0.8 # gain 0.85 # room 0.25 # pan 0.35` |
+
+Abre `song.tidal` en tu editor de TidalCycles, o abre la canción desde Tidal Studio (Mis proyectos → GitHub).
