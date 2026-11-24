@@ -1,0 +1,56 @@
+{
+  "name": "house-sample",
+  "bpm": 70,
+  "tracks": [
+    {
+      "id": "d1",
+      "name": "Kick drum",
+      "kind": "percusion",
+      "code": "mask \"<t f>\" $ every 4 (fast 3) $ s \"[bd ~ bd ~]*2\" # room 0.55",
+      "muted": false
+    },
+    {
+      "id": "d2",
+      "name": "Melody arpy",
+      "kind": "melodia",
+      "code": "slow 2 $ every 3 rev $ jux rev $ n \"<[c5 e5 ~ g5 ~ a5 ~ ~] [e5 ~ d5 g5 ~ a5 ~ c5]>\" # s \"arpy\" # room 0.9 # size 0.95 # legato 2 # gain 0.8 # delay 0.4 # delaytime 0.75 # delayfeedback 0.45 # room 1",
+      "muted": false
+    },
+    {
+      "id": "d3",
+      "name": "Pad",
+      "kind": "armonia",
+      "code": "slow 4 $ n \"<c'maj7 g'min>\" # s \"superpiano\" # room 0.97 # size 0.99 # legato 5.0 # gain 0.45 # lpf 1000",
+      "muted": false
+    },
+    {
+      "id": "d4",
+      "name": "Counter melody",
+      "kind": "melodia",
+      "code": "slow 3 $ n \"<a4 ~ ~ e5 ~ ~ g4 ~>\" # s \"arpy\" # room 0.85 # size 0.9 # legato 1.8 # gain 0.55 # delay 0.3 # delaytime 0.5 # delayfeedback 0.35 # pan 0.3",
+      "muted": false
+    },
+    {
+      "id": "d5",
+      "name": "Claps on 2 and 4",
+      "kind": "percusion",
+      "code": "s \"~ cp ~ cp\" # room 0.33",
+      "muted": false
+    },
+    {
+      "id": "d6",
+      "name": "Air texture",
+      "kind": "textura",
+      "code": "degradeBy 0.65 $ slow 3 $ s \"wind ~ ~ ~ wind ~ ~ ~\" # room 0.25 # size 0.99 # gain 0.9 # lpf 1200 # speed 0.6 # pan (slow 6 sine)",
+      "muted": false
+    },
+    {
+      "id": "d7",
+      "name": "Space layer",
+      "kind": "textura",
+      "code": "degradeBy 0.9 $ slow 4 $ s \"space\" # room 0.99 # size 0.99 # gain 0.3 # lpf 700 # speed 0.4",
+      "muted": false
+    }
+  ],
+  "projectId": "p17955140394693"
+}
