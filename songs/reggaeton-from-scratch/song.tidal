@@ -1,0 +1,25 @@
+-- Reggaeton from scratch
+-- Hecho con Tidal Studio · 92 BPM
+
+setcps (92/60/4)
+
+-- 808 kick (percusion)
+d1 $ mask "<f!4 t!4 f!2 t!6>" $ s "808bd:7*4" # gain 1
+
+-- Dembow snare (percusion)
+d2 $ mask "<f!4 t!4 f!2 t!6>" $ s "[~ ~ ~ sn] [~ ~ sn ~] [~ ~ ~ sn] <[~ ~ sn ~] [~ ~ sn ~] [~ ~ sn ~] [sn sn sn sn]>" # gain 0.5 # nudge (-0.015)
+
+-- Hi-hats (percusion)
+d3 $ mask "<t!8 f!2 t!6>" $ s "hh*8" # gain "[0.55 0.8]*4" # pan 0.6
+
+-- 808 sub (bajo)
+d4 $ mask "<f!4 t!4 f!2 t!6>" $ struct "t ~ ~ t ~ ~ t ~" $ n "<a2 f2 c3 g2>" # s "ts_sub" # legato 0.6 # gain 0.95
+
+-- Pad (armonia)
+d5 $ n "<[a4,c5,e5] [a4,c5,f5] [g4,c5,e5] [g4,b4,d5]>" # s "pad_2_warm_fluid" # legato 1 # gain 0.8 # lpf 2500 # room 0.3
+
+-- Guitar (hook) (melodia)
+d6 $ mask "<t!4 f!4 t!8>" $ n "<[e6 ~ ~ c6 ~ ~ a5 ~] [c6 ~ ~ a5 ~ ~ f5 ~] [e6 ~ ~ g6 ~ ~ e6 ~] [d6 ~ ~ b5 ~ ~ g5 ~]>" # s "acoustic_guitar_nylon_fluid" # gain 0.9 # delay 0.3 # delaytime (60/92/2) # delayfeedback 0.35
+
+-- Vocal chops (melodia)
+d7 $ mask "<f!10 t!6>" $ n "<[~ ~ e5 ~ ~ e5 ~ ~] [~ ~ c5 ~ ~ c5 ~ ~] [~ ~ e5 ~ ~ g5 ~ ~] [~ ~ d5 ~ ~ b4 ~ ~]>" # s "voice_oohs_fluid" # legato 0.5 # gain 0.3 # room 0.3 # pan 0.4
