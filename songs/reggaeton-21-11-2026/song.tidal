@@ -1,0 +1,41 @@
+-- reggaeton-21-11-2026
+-- Hecho con Tidal Studio · 96 BPM
+
+setcps (96/60/4)
+
+-- Dembow kick (percusion)
+d1 $ s "bd ~ bd sn bd ~ bd sn" # gain 0.95
+
+-- 16th hi-hats (percusion)
+d2 $ s "hh*16" # gain (range 0.6 0.9 sine)
+
+-- Double clap (percusion)
+d3 $ s "~ ~ [cp cp] ~ ~ ~ [cp cp] ~" # gain 1.1 # room 0.1
+
+-- 808 bass (bajo)
+d4 $ n "<[c2 ~ ~ g1 c2 ~ ~ g1] [f1 ~ ~ c2 f1 ~ ~ c2]>" # s "superpwm" # lpf 500 # legato 0.8
+
+-- Chord pad (armonia)
+d5 $ n "<c'min7 g'min7 ef'maj7 bf'maj7>" # s "superpiano" # gain 0.55 # legato 3.5 # room 0.4 # lpf 2800
+
+-- Tambourine (percusion)
+d6 $ s "perc*8" # gain 0.65
+
+-- Synth pad (textura)
+d7 $ n "<c3 g3 ef3 bf3>" # s "supersaw" # gain 0.5 # legato 2.5 # lpf 1600 # room 0.2
+
+-- Open HH accent (percusion)
+d8 $ s "~ ~ 808oh ~ ~ ~ 808oh ~" # gain 0.7
+
+-- Vocal ad-libs (melodia)
+d9 silence -- silenciada: n "<[~ ~ g4 ~ ~ ~ g4 ~] [~ bf4 ~ ~ ~ g4 ~ ~] [~ ~ c5 ~ ~ g4 ~ ~] [~ ~ ~ ef4 ~ ~ g4 ~]>" # s "supersaw" # vowel "<a e o>" # gain 1.5 # legato 0.12 # room 0.35 # hpf 400 # lpf 4000
+Piano hook · melodia
+
+-- d10 (melodia)
+d10 $ n "<[g5 ~ ~ ~ af5 ~ g5 ef5] [f5 ~ g5 ~ bf5 ~ ~ ~] [af5 ~ g5 ~ f5 ~ ef5 ~] [d5 ~ ~ ~ c5 ~ ~ ~]>" # s "superpiano" # gain 0.88 # legato 2.2 # room 0.25 # delay 0.5 # delaytime 0.375 # delayfeedback 0.4
+
+-- Trumpet counter-melody (melodia)
+d11 $ n "<[~ ~ ~ c5 ~ g4 ~ ~] [~ bf4 ~ ~ d5 ~ ~ ~] [~ c5 ~ ~ g4 ~ ~ ~] [ef5 ~ ~ ~ ~ ~ ~ ~]>" # s "supertrumpet" # gain 0.72 # legato 1.8 # room 0.25 # delay 0.3 # delaytime 0.375 # delayfeedback 0.25
+
+-- Guitar chops (armonia)
+d12 $ n "<[~ c4 ~ c4 ~ c4 ~ c4] [~ g3 ~ g3 ~ g3 ~ g3] [~ ef4 ~ ef4 ~ ef4 ~ ef4] [~ bf3 ~ bf3 ~ bf3 ~ bf3]>" # s "gtr" # gain 0.85 # legato 0.5 # hpf 200 # lpf 3500 # room 0.1
