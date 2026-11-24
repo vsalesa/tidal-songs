@@ -1,0 +1,16 @@
+-- Marshmello & Manuel Turizo - El Merengue (Extended Coro)
+-- Hecho con Tidal Studio · 123 BPM
+
+setcps (123/60/4)
+
+-- Kick (percusion)
+d1 $ s "<[bd bd ~ ~] bd*4 [bd bd ~ ~] [bd ~ ~ bd]>"
+
+-- Snare & claps (percusion)
+d2 $ s "<[~ ~ ~ sn ~ ~ ~ ~ sn ~ ~ ~ sn ~ ~ ~] [~ ~ ~ ~ ~ ~ ~ sn] [~ ~ sn sn] [~ sn sn ~]>"
+
+-- Hats & cymbals (percusion)
+d3 $ s "<[~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ hh ~ ~ ~ ~] [[~ ~ ~ hh ~ ~ ~ ~]*2] [~ ~ ~ hh ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~] [~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ hh ~ ~ hh ~]>" # gain 0.95
+
+-- Melody (melodia)
+d4 $ note "<[[b5,b4]@3 af4 af4 af4 [af5,af4]@5 ef4 ef4 [ef4,ef5] ef4@2] [ef4@3 ~ ~ ~ ~ ~ ef4@4 fs4@2 e4 fs4] [~ e4@2 [e5,e4]@3 ~ ~ ~ ~ ~ ~ [fs5,fs4]@3 fs4] [~ e4 ~ e4@3 ~ ~ ~ ~ ~ ~ ~ ~ [bf5,bf4]@2]>" # s "supersquare" # legato 1 # room 0.2
