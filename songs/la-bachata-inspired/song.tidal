@@ -1,0 +1,22 @@
+-- La bachata Inspired
+-- Hecho con Tidal Studio · 140 BPM
+
+setcps (140/60/4)
+
+-- Bass bachata (bajo)
+d1 $ n "c2 c2 ~ c2 g1 g1 ~ c2" # s "electric_bass_finger_fluid" # lpf 600 # gain 0.8
+
+-- Kick B (percusion)
+d5 $ s "clubkick*4" # gain 0.6
+
+-- Hats B (percusion)
+d6 $ n "0*16" # s "hihat_vcsl" # gain (range 0.6 0.85 sine)
+
+-- Clap (percusion)
+d7 $ s "~ 808sd ~ 808sd" # gain 0.9 # room 0.41
+
+-- Guitar segunda (armonia)
+d8 $ slow 4 $ n "[c'min c'min c'min ~] [f'min f'min f'min ~] [g'dom7 g'dom7 g'dom7 ~] [c'min c'min c'min ~]" # s "acoustic_guitar_nylon_fluid" # gain 1.1 # room 0.2
+
+-- Saxo lead (melodia)
+d9 $ slow 4 $ n "g5 ~ ~ ~ c5 ~ ~ ~" # s "alto_sax_fluid" # gain 0.9 # legato 2 # room 0.45

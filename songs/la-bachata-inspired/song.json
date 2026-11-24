@@ -1,0 +1,49 @@
+{
+  "name": "La bachata Inspired",
+  "bpm": 140,
+  "tracks": [
+    {
+      "id": "d1",
+      "name": "Bass bachata",
+      "kind": "bajo",
+      "code": "n \"c2 c2 ~ c2 g1 g1 ~ c2\" # s \"electric_bass_finger_fluid\" # lpf 600 # gain 0.8",
+      "muted": false
+    },
+    {
+      "id": "d5",
+      "name": "Kick B",
+      "kind": "percusion",
+      "code": "s \"clubkick*4\" # gain 0.6",
+      "muted": false
+    },
+    {
+      "id": "d6",
+      "name": "Hats B",
+      "kind": "percusion",
+      "code": "n \"0*16\" # s \"hihat_vcsl\" # gain (range 0.6 0.85 sine)",
+      "muted": false
+    },
+    {
+      "id": "d7",
+      "name": "Clap",
+      "kind": "percusion",
+      "code": "s \"~ 808sd ~ 808sd\" # gain 0.9 # room 0.41",
+      "muted": false
+    },
+    {
+      "id": "d8",
+      "name": "Guitar segunda",
+      "kind": "armonia",
+      "code": "slow 4 $ n \"[c'min c'min c'min ~] [f'min f'min f'min ~] [g'dom7 g'dom7 g'dom7 ~] [c'min c'min c'min ~]\" # s \"acoustic_guitar_nylon_fluid\" # gain 1.1 # room 0.2",
+      "muted": false
+    },
+    {
+      "id": "d9",
+      "name": "Saxo lead",
+      "kind": "melodia",
+      "code": "slow 4 $ n \"g5 ~ ~ ~ c5 ~ ~ ~\" # s \"alto_sax_fluid\" # gain 0.9 # legato 2 # room 0.45",
+      "muted": false
+    }
+  ],
+  "projectId": "p1795465807444"
+}
