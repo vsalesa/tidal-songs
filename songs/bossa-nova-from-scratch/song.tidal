@@ -1,0 +1,25 @@
+-- Bossa nova from scratch
+-- Hecho con Tidal Studio · 130 BPM
+
+setcps (130/60/4)
+
+-- Shaker (percusion)
+d1 $ s "[shaker_small:0 shaker_small:2]*8" # gain "[0.95 0.7 0.85 0.7]*4" # hpf 3000 # pan 0.6 # room 0.58
+
+-- Surdo (percusion)
+d2 $ s "bd ~ ~ bd bd ~ ~ bd" # gain 0.8 # lpf 900
+
+-- Rimshot (percusion)
+d3 $ s "<[808:5 ~ ~ 808:5 ~ ~ 808:5 ~] [~ ~ 808:5 ~ ~ 808:5 ~ ~]>" # gain 0.75
+
+-- Upright bass (bajo)
+d4 $ n "<[c3 ~ ~ g2 g2 ~ ~ c3] [a2 ~ ~ e3 e3 ~ ~ a2] [d3 ~ ~ a2 a2 ~ ~ d3] [g2 ~ ~ d3 d3 ~ ~ g2]>" # s "acoustic_bass_fluid" # legato 1 # gain 0.9
+
+-- Nylon guitar (armonia)
+d5 $ n "<[c4'maj7 ~ ~ c4'maj7 ~ ~ c4'maj7 a3'min7] [~ ~ a3'min7 ~ ~ a3'min7 ~ ~] [d4'min7 ~ ~ d4'min7 ~ ~ d4'min7 g3'dom7] [~ ~ g3'dom7 ~ ~ g3'dom7 ~ ~]>" # s "acoustic_guitar_nylon_fluid" # legato 0.5 # gain 0.85 # room 0.15
+
+-- Flute (melodia)
+d6 $ n "<[e6 ~ ~ d6 e6 ~ ~ g6] [~ ~ ~ ~ e6 ~ ~ ~] [f6 ~ ~ e6 f6 ~ ~ a6] [g6 ~ ~ f6 d6 ~ b5 ~] [e6 ~ ~ d6 e6 ~ ~ b6] [a6 ~ ~ ~ g6 ~ ~ ~] [f6 ~ ~ e6 f6 ~ ~ d7] [c7 ~ ~ b6 ~ ~ ~ ~]>" # s "flute_fluid" # legato 0.95 # gain 0.85 # room 0.3
+
+-- FM electric piano (Tidal Studio) (armonia)
+d7 $ n "a5 a5" # s "ts_rhodes"
