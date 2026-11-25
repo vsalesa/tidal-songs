@@ -1,6 +1,6 @@
 # Merengue 2
 
-**140 BPM** · 7 pistas
+**140 BPM** · 9 pistas
 
 | Pista | Nombre | Código |
 |---|---|---|
@@ -8,8 +8,10 @@
 | `d2` | Tambora | `mask "<f!4 t!12>" $ s "[woodblock_vcsl:6 ~ woodblock_vcsl:6 woodblock_vcsl:7] [woodblock_vcsl:6 ~ congas:22 ~] [woodblock_vcsl:6 ~ woodblock_vcsl:6 woodblock_vcsl:7] [congas:6 ~ congas:22 congas:22]" # gain 0.9 # room 0.15` |
 | `d3` | Kick | `mask "<f!4 t!8 f!2 t!2>" $ s "bd*4" # gain "[0.9 0.7]*2" # lpf 2500` |
 | `d4` | Electric bass | `mask "<f!4 t!12>" $ n "<[c3 ~ ~ ~ ~ ~ g2 ~ c3 ~ ~ ~ g2 ~ e3 ~] [f3 ~ ~ ~ ~ ~ c3 ~ f3 ~ ~ ~ c3 ~ fs3 ~] [g3 ~ ~ ~ ~ ~ d3 ~ g3 ~ ~ ~ d3 ~ b2 ~] [c3 ~ ~ ~ ~ ~ g2 ~ c3 ~ ~ ~ g2 ~ ~ ~]>" # s "electric_bass_finger_fluid" # legato 0.7 # gain 0.9` |
-| `d5` | Piano | `mask "<t!12 f!2 t!2>" $ n "<[g4 [c5 e5] g4 [c5 e5] g4 c5 e5 [g5 e5]] [a4 [c5 f5] a4 [c5 f5] a4 c5 f5 [a5 f5]] [g4 [b4 f5] g4 [b4 f5] g4 b4 d5 [f5 d5]] [g4 [c5 e5] g4 [c5 e5] g4 c5 e5 [g5 e5]]>" # s "bright_acoustic_piano_fluid" # legato 0.6 # gain "[0.9 0.75]*4" # room 0.2` |
-| `d6` | Trumpets | `mask "<t!4 f!4 t!4 f!2 t!2>" $ n "<[g5 ~ c6 g5 ~ e6 ~ g6] ~ [f5 ~ b5 f5 ~ d6 ~ f6] ~>" # s "trumpet_fluid" # legato 0.8 # gain 0.9 # room 0.25` |
-| `d7` | Alto sax | `mask "<f!8 t!4 f!2 t!2>" $ n "<~ [c6 ~ a5 ~ f5 g5 a5] ~ [b5 ~ g5 ~ e5 f5 g5 ~]>" # s "alto_sax_fluid" # legato 0.8 # gain 0.85 # room 0.25 # pan 0.35` |
+| `d5` | Guitarra montuno | `mask "<t!12 f!2 t!2>" $ sometimesBy 0.3 (off 0.125 (\|+ n 2)) $ n "<[[c4,e4,g4] ~ [c4,e4,g4] ~]*2 [[f3,a3,c4] ~ [f3,a3,c4] ~]*2 [[g3,b3,d4] ~ [g3,b3,d4] ~]*2 [[c4,e4,g4] ~ [c4,e4,g4] ~]*2 [c4 ~ e4 ~ g4 ~ e4 ~] [f3 ~ a3 ~ c4 ~ a3 ~] [g3 ~ b3 ~ d4 ~ b3 ~] [c4 e4 g4 ~ c4 ~ e4 ~]>" # s "acoustic_guitar_nylon_fluid" # legato 0.55 # gain 0.85 # room 0.34` |
+| `d6` | Melodía principal | `mask "<t!4 f!4 t!4 f!2 t!2>" $ n (scale "major" "<[2 ~ 4 5 ~ 7 5 ~] [5 ~ 7 5 ~ 7 5 ~] [4 ~ 6 7 ~ 6 4 ~] [4 2 0 ~ ~ 0 ~ ~] [5 ~ 7 9 ~ 7 5 ~] [5 7 ~ 5 3 5 ~ ~] [4 ~ 2 0 ~ 0 0 ~] [2 4 ~ 7 ~ 4 2 ~]>") # s "<flute_fluid vibraphone_soft trumpet_fluid flute_fluid vibraphone_soft flute_fluid trumpet_fluid vibraphone_soft>" # legato 0.85 # gain 0.88 # room 0.3` |
+| `d7` | Saxo alto (respuesta) | `mask "<f!8 t!4 f!2 t!2>" $ n (scale "major" "<[7 ~ 5 ~ 4 3 2 ~] [6 ~ 4 ~ 2 ~ 1 ~] [5 4 ~ 3 2 ~ 0 ~] [2 ~ 4 5 ~ 7 ~ ~] [5 ~ 3 1 ~ 0 ~ ~] [6 4 ~ 2 1 0 ~ ~]>") # s "alto_sax_fluid" # legato 0.8 # gain 0.85 # room 0.25 # pan 0.35` |
+| `d8` | Trompeta (relleno) | `mask "<f!4 t!4 f!8>" $ n (scale "major" "<[7 ~ 5 ~ 4 2 ~ ~] [6 ~ 4 ~ 1 ~ 0 ~] [5 ~ 3 ~ 2 0 ~ ~] [4 2 0 ~ ~ ~ ~ ~]>") # s "trumpet_fluid" # legato 0.75 # gain 0.88 # room 0.25 # pan (-0.3)` |
+| `d9` | Piano (breakdown) | `mask "<f!12 t!2 f!2>" $ sometimesBy 0.3 (off 0.0625 (\|+ n 2)) $ degradeBy 0.15 $ n "<[c5 e5 g5 ~ e5 c5 ~ ~] [f4 a4 c5 ~ a4 f4 ~ ~]>" # s "acoustic_grand_piano_fluid" # legato 0.65 # gain 0.78 # room 0.4 # pan 0.2` |
 
 Abre `song.tidal` en tu editor de TidalCycles, o abre la canción desde Tidal Studio (Mis proyectos → GitHub).
