@@ -1,4 +1,15 @@
 {
   "version": 2,
-  "memories": []
+  "memories": [
+    {
+      "uid": "a9c7bad18df647f4",
+      "scope": "global",
+      "scope_key": "",
+      "text": "I love it",
+      "text_en": "",
+      "subject": "",
+      "source": "chat",
+      "evidence": 1
+    }
+  ]
 }
