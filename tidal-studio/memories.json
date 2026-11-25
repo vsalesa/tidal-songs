@@ -2,6 +2,16 @@
   "version": 2,
   "memories": [
     {
+      "uid": "067173825d0340b5",
+      "scope": "genre",
+      "scope_key": "ambient",
+      "text": "En ambient, cuando me das varias opciones suelo elegir la más llena (más notas) (3 de 4 veces)",
+      "text_en": "In ambient, when you give me options I usually pick the busiest one (more notes) (3 of 4 times)",
+      "subject": "optpick|denser|ambient",
+      "source": "picks",
+      "evidence": 3
+    },
+    {
       "uid": "2063b6f6490b494e",
       "scope": "song",
       "scope_key": "p1795614506647",
