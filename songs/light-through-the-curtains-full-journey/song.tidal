@@ -1,0 +1,40 @@
+-- Light Through the Curtains — Full Journey
+-- Hecho con Tidal Studio · 76 BPM
+
+setcps (76/60/4)
+
+-- Heartbeat Kick (percusion)
+d1 $ mask "<t!40 f!8>" $ s "bd ~ ~ ~ ~ ~ ~ ~" # gain 0.07 # room 0.75 # size 0.85
+
+-- Childhood Piano (early) (melodia)
+d2 $ mask "<t!24 f!24>" $ n "a4 ~ c5 ~ e5 ~ <c5 b4> ~" # s "salamander_grand" # room 0.8 # size 0.9 # gain 0.65 # legato 0.9
+
+-- Open Window (textura)
+d3 $ s "birds" # gain 0.03 # room 1.0 # size 1.0 # speed 0.6
+
+-- Morning Bass (bajo)
+d4 $ mask "<t!40 f!8>" $ n "a2 ~ ~ ~ ~ ~ ~ ~" # s "steinway_b" # lpf 380 # gain 0.1 # room 0.6 # size 0.85 # legato 1.2
+
+-- Brushed Guitar (melodia)
+d5 $ mask "<t!40 f!8>" $ n "e4 ~ ~ a4 ~ ~ <c5 ~> ~" # s "ts_pluck" # room 1.0 # size 0.95 # gain 0.7 # legato 0.8 # delay 0.15 # delaytime 0.3 # delayfeedback 0.3
+
+-- Wind Swell (textura)
+d6 $ mask "<t!40 f!8>" $ whenmod 16 12 (# gain 0.5) $ s "wind" # gain 0.015 # room 1.0 # size 1.0 # speed 0.5
+
+-- Vibraphone Answer (melodia)
+d7 $ mask "<f!8 t!32 f!8>" $ n "~ e5 ~ ~ g5 ~ e5 ~" # s "vibraphone_soft" # room 0.85 # size 0.9 # gain 1.05 # legato 1.1
+
+-- Warm Pad (armonia)
+d8 $ mask "<f!16 t!24 f!8>" $ n "<[a3,c4,e4] [a3,c4,e4] [g3,b3,d4] [a3,c4,e4]>" # s "pad_2_warm_fluid" # legato 1.5 # lpf 1000 # room 0.9 # size 0.95 # gain 0.06
+
+-- Childhood Piano (variation) (melodia)
+d9 $ mask "<f!24 t!24>" $ n "~ c5 a4 ~ e5 ~ [c5 b4] ~" # s "salamander_grand" # room 0.8 # size 0.9 # gain 0.65 # legato 1.0
+
+-- Cello Answer (melodia)
+d10 $ mask "<f!12 t!28 f!8>" $ n "e3 ~ ~ ~ g3 ~ ~ ~" # s "vsco_cellos_arco" # room 0.85 # size 0.95 # gain 0.9 # legato 1.4
+
+-- Horn Breath (armonia)
+d11 $ mask "<f!20 t!20 f!8>" $ n "a3 ~ ~ ~ ~ ~ ~ ~" # s "french_horn_fluid" # room 0.9 # size 0.95 # gain 0.4 # legato 1.8
+
+-- Voice Oohs (bar 29) (melodia)
+d12 $ mask "<f!28 t!12 f!8>" $ n "a4 ~ ~ ~ e5 ~ ~ ~" # s "voice_oohs_fluid" # room 0.9 # size 0.95 # gain 1.45 # legato 1.6 # lpf 1800
