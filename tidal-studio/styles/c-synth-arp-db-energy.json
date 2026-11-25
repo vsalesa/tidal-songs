@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "name": "C: Synth arp – D&B energy",
+  "genre": "",
+  "bpm": 174,
+  "key": "",
+  "description": "A fast supersaw arp climbing and descending through each chord — classic drum & bass feel. The filter slowly opens and closes so it keeps evolving. More electronic and high-energy than the others.",
+  "roles": [
+    {
+      "role": "percusion",
+      "name": "Kick",
+      "sounds": [
+        "bd"
+      ],
+      "fx": "# gain 1",
+      "groove": "mask \"<f!4 t!12>\" $ s \"bd ~ ~ ~ ~ ~ ~ ~ ~ ~ bd ~ ~ ~ ~ ~\" # gain 1"
+    },
+    {
+      "role": "percusion",
+      "name": "Snare",
+      "sounds": [
+        "sn"
+      ],
+      "fx": "# gain 1 # shape 0.2",
+      "groove": "mask \"<f!4 t!12>\" $ s \"~ sn ~ sn\" # gain 1 # shape 0.2"
+    },
+    {
+      "role": "percusion",
+      "name": "Hi-hats",
+      "sounds": [
+        "hh"
+      ],
+      "fx": "# gain \"[0.7 0.5]*4\"",
+      "groove": "mask \"<f!2 t!14>\" $ s \"hh*8\" # gain \"[0.7 0.5]*4\""
+    },
+    {
+      "role": "percusion",
+      "name": "Chopped break",
+      "sounds": [
+        "amencutup"
+      ],
+      "fx": "# gain 0.6 # hpf 1500",
+      "groove": "mask \"<f!8 t!8>\" $ s \"amencutup*16\" # n (irand 32) # gain 0.6 # hpf 1500"
+    },
+    {
+      "role": "bajo",
+      "name": "Bass",
+      "sounds": [
+        "supersaw"
+      ],
+      "fx": "# lpf 500 # legato 1 # gain 0.8",
+      "groove": ""
+    },
+    {
+      "role": "armonia",
+      "name": "Pad",
+      "sounds": [
+        "pad_2_warm_fluid"
+      ],
+      "fx": "# lpf 1800 # legato 1 # gain 0.4 # room 0.6 # size 0.9",
+      "groove": ""
+    },
+    {
+      "role": "melodia",
+      "name": "Piano",
+      "sounds": [
+        "steinway_b"
+      ],
+      "fx": "# gain 0.6 # room 0.4 # delay 0.35 # delaytime (60/174*0.75) # delayfeedback 0.4",
+      "groove": ""
+    },
+    {
+      "role": "melodia",
+      "name": "Synth Arp",
+      "sounds": [
+        "supersaw"
+      ],
+      "fx": "# lpf (range 1500 4500 $ slow 4 sine) # gain 0.45 # room 0.3 # delay 0.3 # delaytime (60/174*0.5) # delayfeedback 0.35",
+      "groove": "n (arp \"updown\" \"<d'min bf'maj f'maj c'maj>\") # s \"supersaw\" # lpf (range 1500 4500 $ slow 4 sine) # gain 0.45 # room 0.3 # delay 0.3 # delaytime (60/174*0.5) # delayfeedback 0.35"
+    }
+  ],
+  "forma": [],
+  "from_song": "C: Synth arp – D&B energy",
+  "literal": [
+    {
+      "id": "d1",
+      "name": "Kick",
+      "kind": "percusion",
+      "code": "mask \"<f!4 t!12>\" $ s \"bd ~ ~ ~ ~ ~ ~ ~ ~ ~ bd ~ ~ ~ ~ ~\" # gain 1"
+    },
+    {
+      "id": "d2",
+      "name": "Snare",
+      "kind": "percusion",
+      "code": "mask \"<f!4 t!12>\" $ s \"~ sn ~ sn\" # gain 1 # shape 0.2"
+    },
+    {
+      "id": "d3",
+      "name": "Hi-hats",
+      "kind": "percusion",
+      "code": "mask \"<f!2 t!14>\" $ s \"hh*8\" # gain \"[0.7 0.5]*4\""
+    },
+    {
+      "id": "d4",
+      "name": "Chopped break",
+      "kind": "percusion",
+      "code": "mask \"<f!8 t!8>\" $ s \"amencutup*16\" # n (irand 32) # gain 0.6 # hpf 1500"
+    },
+    {
+      "id": "d5",
+      "name": "Bass",
+      "kind": "bajo",
+      "code": "mask \"<f!4 t!12>\" $ n \"<[d3@6 f3@2] [bf2@6 a2@2] [f2@8] [c3@6 e3@2]>\" # s \"supersaw\" # lpf 500 # legato 1 # gain 0.8"
+    },
+    {
+      "id": "d6",
+      "name": "Pad",
+      "kind": "armonia",
+      "code": "n \"<d'min bf4'maj f4'maj c'maj>\" # s \"pad_2_warm_fluid\" # lpf 1800 # legato 1 # gain 0.4 # room 0.6 # size 0.9"
+    },
+    {
+      "id": "d7",
+      "name": "Piano",
+      "kind": "melodia",
+      "code": "mask \"<t!4 f!4 t!8>\" $ n \"<[a6 ~ ~ f6 ~ ~ d6 ~] [~ ~ ~ ~ f6 ~ e6 d6] [c6 ~ ~ a5 ~ ~ c6 ~] [e6 ~ ~ ~ g6 ~ e6 ~]>\" # s \"steinway_b\" # gain 0.6 # room 0.4 # delay 0.35 # delaytime (60/174*0.75) # delayfeedback 0.4"
+    },
+    {
+      "id": "d8",
+      "name": "Synth Arp",
+      "kind": "melodia",
+      "code": "n (arp \"updown\" \"<d'min bf'maj f'maj c'maj>\") # s \"supersaw\" # lpf (range 1500 4500 $ slow 4 sine) # gain 0.45 # room 0.3 # delay 0.3 # delaytime (60/174*0.5) # delayfeedback 0.35"
+    }
+  ],
+  "id": "c-synth-arp-db-energy"
+}
