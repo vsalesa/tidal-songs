@@ -1,0 +1,10 @@
+-- Untitled song
+-- Hecho con Tidal Studio · 124 BPM
+
+setcps (124/60/4)
+
+-- Four-on-the-floor kick (percusion)
+d1 $ every 8 (fast 2) $ s "bd*4" # gain 1.1
+
+-- Off-beat bass (bajo)
+d2 $ n "[~ c3]*4" # s "superpwm" # lpf 900 # legato 0.5 # gain 0.9

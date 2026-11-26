@@ -1,0 +1,22 @@
+{
+  "name": "Untitled song",
+  "bpm": 124,
+  "style": "house",
+  "tracks": [
+    {
+      "id": "d1",
+      "name": "Four-on-the-floor kick",
+      "kind": "percusion",
+      "code": "every 8 (fast 2) $ s \"bd*4\" # gain 1.1",
+      "muted": false
+    },
+    {
+      "id": "d2",
+      "name": "Off-beat bass",
+      "kind": "bajo",
+      "code": "n \"[~ c3]*4\" # s \"superpwm\" # lpf 900 # legato 0.5 # gain 0.9",
+      "muted": false
+    }
+  ],
+  "projectId": "p1795707991076"
+}
