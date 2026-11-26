@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "name": "A — Accordion + trumpet fanfare",
+  "genre": "house",
+  "bpm": 124,
+  "key": "Am",
+  "description": "Accordion plays Am–E–Am–Dm, the classic pasodoble harmony — instantly Spanish and lively.",
+  "roles": [
+    {
+      "role": "percusion",
+      "name": "March Kick",
+      "sounds": [
+        "bd"
+      ],
+      "fx": "# gain 1.1",
+      "groove": "s \"bd ~ bd ~\" # gain 1.1"
+    },
+    {
+      "role": "percusion",
+      "name": "CR Accents",
+      "sounds": [
+        "cr"
+      ],
+      "fx": "# gain 1.05 # room 0.15",
+      "groove": "s \"~ cr ~ cr\" # gain 1.05 # room 0.15"
+    },
+    {
+      "role": "melodia",
+      "name": "Trumpet",
+      "sounds": [
+        "trumpet_fluid"
+      ],
+      "fx": "# room 0.45 # gain 0.9 # legato 1.1",
+      "groove": ""
+    },
+    {
+      "role": "armonia",
+      "name": "Accordion",
+      "sounds": [
+        "accordion_fluid"
+      ],
+      "fx": "# legato 1.2 # room 0.3 # gain 0.8",
+      "groove": ""
+    },
+    {
+      "role": "percusion",
+      "name": "March Snare",
+      "sounds": [
+        "sn"
+      ],
+      "fx": "# gain 0.85 # room 0.1",
+      "groove": "s \"~ [sn sn] ~ sn\" # gain 0.85 # room 0.1"
+    }
+  ],
+  "forma": [],
+  "from_song": "A — Accordion + trumpet fanfare",
+  "literal": [
+    {
+      "id": "d1",
+      "name": "March Kick",
+      "kind": "percusion",
+      "code": "s \"bd ~ bd ~\" # gain 1.1"
+    },
+    {
+      "id": "d2",
+      "name": "CR Accents",
+      "kind": "percusion",
+      "code": "s \"~ cr ~ cr\" # gain 1.05 # room 0.15"
+    },
+    {
+      "id": "d3",
+      "name": "Trumpet",
+      "kind": "melodia",
+      "code": "note \"<[e5 e5 a5@2 ~ g5 e5 f5] [e5@4 ~ cs5 d5 e5] [a5 g5 f5 e5 d5 c5 b4 a4] [a4@3 ~]>\" # s \"trumpet_fluid\" # room 0.45 # gain 0.9 # legato 1.1"
+    },
+    {
+      "id": "d4",
+      "name": "Accordion",
+      "kind": "armonia",
+      "code": "n \"<a'min e'maj a'min d'min>\" # s \"accordion_fluid\" # legato 1.2 # room 0.3 # gain 0.8"
+    },
+    {
+      "id": "d5",
+      "name": "March Snare",
+      "kind": "percusion",
+      "code": "s \"~ [sn sn] ~ sn\" # gain 0.85 # room 0.1"
+    }
+  ],
+  "id": "a-accordion-trumpet-fanfare"
+}
