@@ -2,6 +2,16 @@
   "version": 2,
   "memories": [
     {
+      "uid": "2063b6f6490b494e",
+      "scope": "song",
+      "scope_key": "p1795716127122",
+      "text": "How we created this song with decission making and tips for a good ambient song",
+      "text_en": "",
+      "subject": "",
+      "source": "chat",
+      "evidence": 1
+    },
+    {
       "uid": "067173825d0340b5",
       "scope": "genre",
       "scope_key": "ambient",
@@ -10,16 +20,6 @@
       "subject": "optpick|denser|ambient",
       "source": "picks",
       "evidence": 3
-    },
-    {
-      "uid": "2063b6f6490b494e",
-      "scope": "song",
-      "scope_key": "p1795614506647",
-      "text": "How we created this song with decission making and tips for a good ambient song",
-      "text_en": "",
-      "subject": "",
-      "source": "chat",
-      "evidence": 1
     },
     {
       "uid": "3a1bf8feb58548e5",
