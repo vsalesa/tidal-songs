@@ -6,14 +6,14 @@
       "id": "d1",
       "name": "track1",
       "kind": "armonia",
-      "code": "note \"<[cs4 [a4,cs5,e5] b3 a3] [af3 [af4,d5,e5] e3 [af4,d5,e5]] [[a3 [a4,cs5,e5]]*2] [[fs3 [a4,cs5,fs5]]*2]>\" # s \"superpiano\" # legato 1",
+      "code": "note \"<[cs4 [a4,cs5,e5] b3 a3] [af3 [af4,d5,e5] e3 [af4,d5,e5]] [[a3 [a4,cs5,e5]]*2] [[fs3 [a4,cs5,fs5]]*2]>\" # s \"acoustic_guitar_nylon_fluid\" # legato 1",
       "muted": false
     },
     {
       "id": "d2",
       "name": "track2",
       "kind": "armonia",
-      "code": "note \"<[a3,cs5,e5,a5] [e3,d5,e5,af5,b5] ~ ~>\" # s \"superpiano\" # legato 1",
+      "code": "note \"<[a3,cs5,e5,a5] [e3,d5,e5,af5,b5] ~ ~>\" # s \"acoustic_guitar_steel_fluid\" # legato 1",
       "muted": false
     }
   ],
