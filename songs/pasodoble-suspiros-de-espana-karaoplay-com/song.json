@@ -1,0 +1,70 @@
+{
+  "name": "Pasodoble - Suspiros de Espana (karaoplay.com)",
+  "bpm": 220,
+  "tracks": [
+    {
+      "id": "d1",
+      "name": "Kick",
+      "kind": "percusion",
+      "code": "s \"<[[~ bd ~ ~ ~ ~ ~ ~ ~ ~ ~ ~]*2] [[~ bd ~ ~ ~ ~ ~ ~ ~ ~ ~ ~]*2] [bd ~ ~ ~ ~ ~ ~ ~ ~ bd ~ ~ ~ ~ ~ ~] [[~ bd ~ ~ ~ ~ ~ ~ ~ ~ ~ ~]*2]>\"",
+      "muted": false
+    },
+    {
+      "id": "d2",
+      "name": "Snare & claps",
+      "kind": "percusion",
+      "code": "s \"<[[~ ~ ~ ~ ~ ~ ~ sn ~ ~ ~ ~]*2] [~ ~ ~ ~ ~ ~ ~ sn ~ sn ~ ~ ~ ~ sn ~ ~ ~ ~ sn ~ ~ ~ ~] [[~ ~ ~ ~ ~ ~ ~ sn ~ ~ ~ ~]*2] [~ ~ ~ ~ ~ ~ ~ sn ~ sn ~ ~ ~ sn ~ ~ ~ ~ ~ sn ~ ~ ~ ~]>\"",
+      "muted": false
+    },
+    {
+      "id": "d3",
+      "name": "Hats & cymbals",
+      "kind": "percusion",
+      "code": "s \"<[~ ~ ~ ~ ~ ~ cr oh ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ [oh,cr] ~ ~ ~ ~ ~] [~ [oh,cr] ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ cr oh ~ ~ ~ ~] [[~ [oh,cr] ~ ~ ~ ~ ~ ~ ~ ~ ~ ~]*2] [~ [oh,cr] ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ [oh,cr] ~ ~ ~ ~]>\" # gain 1.1",
+      "muted": false
+    },
+    {
+      "id": "d4",
+      "name": "Toms & percussion",
+      "kind": "percusion",
+      "code": "s \"<[[perc ~ ~ ~ ~ ~ ~ perc ~ ~ ~ ~]*2] [~ perc ~ ~ ~ ~ perc ~ ~ perc ~ ~ ~ perc ~ ~ ~ ~ ~ perc ~ ~ ~ ~] [perc ~ ~ ~ ~ ~ ~ perc ~ ~ ~ ~ ~ perc ~ ~ ~ ~ ~ perc ~ ~ ~ ~] [~ perc ~ ~ ~ ~ ~ perc ~ perc ~ ~ ~ perc ~ ~ ~ ~ ~ perc ~ ~ ~ ~]>\" # gain 1.1",
+      "muted": false
+    },
+    {
+      "id": "d5",
+      "name": "Atracción",
+      "kind": "bajo",
+      "code": "note \"<[~ a2] [~ ~ ~ f3] [~ f3] [c3@2 ~ g3]>\" # s \"supersaw\" # legato 1 # lpf 900",
+      "muted": false
+    },
+    {
+      "id": "d6",
+      "name": "Alicante",
+      "kind": "armonia",
+      "code": "note \"<~ [~ [d5,d6]] [~ e6 f6 e6] [~ ~ e6 d6 c6@2 d6@2 e6@8]>\" # s \"superpiano\" # legato 1",
+      "muted": false
+    },
+    {
+      "id": "d7",
+      "name": "ali-atrac",
+      "kind": "armonia",
+      "code": "note \"<~ [a4@12 ~ d5@11] [~ ~ ~ ~ ~ ~ ~ e5@6 f5@6 e5@5] [~ d5 ~ e5 d5@3 c5 ~ d5@2 ~ ~ e5@11]>\" # s \"superpwm\" # legato 1",
+      "muted": false
+    },
+    {
+      "id": "d8",
+      "name": "@correo.",
+      "kind": "armonia",
+      "code": "note \"<~ [~ [a4,a5]@12 [d5,d6]@11] [~ ~ ~ ~ ~ ~ ~ e6@6 f6@6 e6@5] [~ d6@2 e6 d6@3 c6@2 d6@2 ~ ~ e6@11]>\" # s \"superpwm\" # legato 1",
+      "muted": false
+    },
+    {
+      "id": "d9",
+      "name": "E-MAIL:",
+      "kind": "melodia",
+      "code": "note \"<[a6 e6 ~ ~ ~ ~ [cs6,e6,a6] ~ ~ ~ ~ ~ [cs6,e6,a6] ~ ~ ~ ~ ~ [cs6,e6,a6] ~ ~ ~ ~ ~] [[a5,d6,f6] [d6,a5,f6] [a5,d6,f6] [f6,a5,d6]] [[d6,f6]@2 ~ ~ ~ ~ [d6,f6] bf5 ~ ~ ~ ~ [d6,bf5] f6 ~ ~ ~ ~ [bf5,d6,f6] ~ ~ ~ ~ ~] [g5,c6,e6]*4>\" # s \"supersquare\" # legato 1 # room 0.2",
+      "muted": false
+    }
+  ],
+  "projectId": "p1795713378197"
+}

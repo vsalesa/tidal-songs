@@ -1,0 +1,31 @@
+-- Pasodoble - Suspiros de Espana (karaoplay.com)
+-- Hecho con Tidal Studio · 220 BPM
+
+setcps (220/60/4)
+
+-- Kick (percusion)
+d1 $ s "<[[~ bd ~ ~ ~ ~ ~ ~ ~ ~ ~ ~]*2] [[~ bd ~ ~ ~ ~ ~ ~ ~ ~ ~ ~]*2] [bd ~ ~ ~ ~ ~ ~ ~ ~ bd ~ ~ ~ ~ ~ ~] [[~ bd ~ ~ ~ ~ ~ ~ ~ ~ ~ ~]*2]>"
+
+-- Snare & claps (percusion)
+d2 $ s "<[[~ ~ ~ ~ ~ ~ ~ sn ~ ~ ~ ~]*2] [~ ~ ~ ~ ~ ~ ~ sn ~ sn ~ ~ ~ ~ sn ~ ~ ~ ~ sn ~ ~ ~ ~] [[~ ~ ~ ~ ~ ~ ~ sn ~ ~ ~ ~]*2] [~ ~ ~ ~ ~ ~ ~ sn ~ sn ~ ~ ~ sn ~ ~ ~ ~ ~ sn ~ ~ ~ ~]>"
+
+-- Hats & cymbals (percusion)
+d3 $ s "<[~ ~ ~ ~ ~ ~ cr oh ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ [oh,cr] ~ ~ ~ ~ ~] [~ [oh,cr] ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ cr oh ~ ~ ~ ~] [[~ [oh,cr] ~ ~ ~ ~ ~ ~ ~ ~ ~ ~]*2] [~ [oh,cr] ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ [oh,cr] ~ ~ ~ ~]>" # gain 1.1
+
+-- Toms & percussion (percusion)
+d4 $ s "<[[perc ~ ~ ~ ~ ~ ~ perc ~ ~ ~ ~]*2] [~ perc ~ ~ ~ ~ perc ~ ~ perc ~ ~ ~ perc ~ ~ ~ ~ ~ perc ~ ~ ~ ~] [perc ~ ~ ~ ~ ~ ~ perc ~ ~ ~ ~ ~ perc ~ ~ ~ ~ ~ perc ~ ~ ~ ~] [~ perc ~ ~ ~ ~ ~ perc ~ perc ~ ~ ~ perc ~ ~ ~ ~ ~ perc ~ ~ ~ ~]>" # gain 1.1
+
+-- Atracción (bajo)
+d5 $ note "<[~ a2] [~ ~ ~ f3] [~ f3] [c3@2 ~ g3]>" # s "supersaw" # legato 1 # lpf 900
+
+-- Alicante (armonia)
+d6 $ note "<~ [~ [d5,d6]] [~ e6 f6 e6] [~ ~ e6 d6 c6@2 d6@2 e6@8]>" # s "superpiano" # legato 1
+
+-- ali-atrac (armonia)
+d7 $ note "<~ [a4@12 ~ d5@11] [~ ~ ~ ~ ~ ~ ~ e5@6 f5@6 e5@5] [~ d5 ~ e5 d5@3 c5 ~ d5@2 ~ ~ e5@11]>" # s "superpwm" # legato 1
+
+-- @correo. (armonia)
+d8 $ note "<~ [~ [a4,a5]@12 [d5,d6]@11] [~ ~ ~ ~ ~ ~ ~ e6@6 f6@6 e6@5] [~ d6@2 e6 d6@3 c6@2 d6@2 ~ ~ e6@11]>" # s "superpwm" # legato 1
+
+-- E-MAIL: (melodia)
+d9 $ note "<[a6 e6 ~ ~ ~ ~ [cs6,e6,a6] ~ ~ ~ ~ ~ [cs6,e6,a6] ~ ~ ~ ~ ~ [cs6,e6,a6] ~ ~ ~ ~ ~] [[a5,d6,f6] [d6,a5,f6] [a5,d6,f6] [f6,a5,d6]] [[d6,f6]@2 ~ ~ ~ ~ [d6,f6] bf5 ~ ~ ~ ~ [d6,bf5] f6 ~ ~ ~ ~ [bf5,d6,f6] ~ ~ ~ ~ ~] [g5,c6,e6]*4>" # s "supersquare" # legato 1 # room 0.2
