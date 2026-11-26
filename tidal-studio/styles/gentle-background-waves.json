@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "name": "Gentle background waves",
+  "genre": "",
+  "bpm": 76,
+  "key": "C",
+  "description": "Soft constant sea bed underneath everything, very quiet, like you're sitting at the shore.",
+  "roles": [
+    {
+      "role": "percusion",
+      "name": "Chillout Beat",
+      "sounds": [
+        "bd",
+        "hh",
+        "rm"
+      ],
+      "fx": "# gain 1.25, s \"~ ~ rm ~ ~ ~ rm ~\" # gain 1.1 # room 0.4, s \"hh*8\" # gain (range 0.85 1.05 $ fast 2 sine) # hpf 4000 # pan 0.6]",
+      "groove": "stack [s \"808bd ~ ~ ~ ~ 808bd ~ ~\" # gain 1.25, s \"~ ~ rm ~ ~ ~ rm ~\" # gain 1.1 # room 0.4, s \"hh*8\" # gain (range 0.85 1.05 $ fast 2 sine) # hpf 4000 # pan 0.6]"
+    },
+    {
+      "role": "melodia",
+      "name": "Childhood Piano (early)",
+      "sounds": [
+        "salamander_grand"
+      ],
+      "fx": "# room 0.8 # size 0.9 # gain 0.6 # legato 1.1",
+      "groove": ""
+    },
+    {
+      "role": "percusion",
+      "name": "Open Window",
+      "sounds": [
+        "birds"
+      ],
+      "fx": "# gain 0.03 # room 0.6 # size 0.7 # speed 0.6",
+      "groove": "s \"birds\" # gain 0.03 # room 0.6 # size 0.7 # speed 0.6"
+    },
+    {
+      "role": "bajo",
+      "name": "Morning Bass",
+      "sounds": [
+        "steinway_b"
+      ],
+      "fx": "# lpf 380 # gain 0.1 # room 0.6 # size 0.85 # legato 1.2",
+      "groove": ""
+    },
+    {
+      "role": "melodia",
+      "name": "Brushed Guitar",
+      "sounds": [
+        "ts_pluck"
+      ],
+      "fx": "# room 0.6 # size 0.7 # gain 0.7 # legato 0.8 # delay 0.15 # delaytime 0.3 # delayfeedback 0.3",
+      "groove": ""
+    },
+    {
+      "role": "percusion",
+      "name": "Wind Swell",
+      "sounds": [
+        "wind"
+      ],
+      "fx": "# gain 0.5) $ s \"wind\" # gain 0.015 # room 0.7 # size 0.8 # speed 0.5",
+      "groove": "mask \"<t!40 f!8>\" $ whenmod 16 12 (# gain 0.5) $ s \"wind\" # gain 0.015 # room 0.7 # size 0.8 # speed 0.5"
+    },
+    {
+      "role": "melodia",
+      "name": "d7",
+      "sounds": [
+        "vibraphone_soft"
+      ],
+      "fx": "# room 0.85 # size 0.9 # gain 1.0 # legato 1.1",
+      "groove": ""
+    },
+    {
+      "role": "armonia",
+      "name": "Warm Pad",
+      "sounds": [
+        "pad_2_warm_fluid"
+      ],
+      "fx": "# legato 1.5 # lpf 1000 # room 0.9 # size 0.95 # gain 0.06",
+      "groove": ""
+    },
+    {
+      "role": "melodia",
+      "name": "d9",
+      "sounds": [
+        "salamander_grand"
+      ],
+      "fx": "# room 0.8 # size 0.9 # gain 0.65 # legato 1.0",
+      "groove": ""
+    },
+    {
+      "role": "melodia",
+      "name": "Cello Answer",
+      "sounds": [
+        "vsco_cellos_arco"
+      ],
+      "fx": "# room 0.85 # size 0.95 # gain 0.9 # legato 1.4",
+      "groove": ""
+    },
+    {
+      "role": "armonia",
+      "name": "Horn Breath",
+      "sounds": [
+        "french_horn_fluid"
+      ],
+      "fx": "# room 0.9 # size 0.95 # gain 0.4 # legato 1.8",
+      "groove": ""
+    },
+    {
+      "role": "melodia",
+      "name": "Voice Oohs (bar 29)",
+      "sounds": [
+        "voice_oohs_fluid"
+      ],
+      "fx": "# room 0.9 # size 0.95 # gain 1.45 # legato 1.6 # lpf 450",
+      "groove": ""
+    },
+    {
+      "role": "fx",
+      "name": "Electronic FX",
+      "sounds": [
+        "ts_acid",
+        "ts_bell",
+        "ts_juno"
+      ],
+      "fx": "# gain 1.2 # room 0.5 # size 0.8 # delay 0.5 # delaytime 0.592 # delayfeedback 0.55 # pan (range 0.15 0.85 $ slow 4 sine), mask \"<f!8 t!2 f!6>\" $ degradeBy 0.35 $ n \"a4 e5 a5 e5 c5 a5 e5 g5\" # lpf (range 700 3000 $ slow 8 sine) # resonance 0.2 # gain 1.1 # room 0.5 # delay 0.35 # delaytime 0.592 # d",
+      "groove": ""
+    },
+    {
+      "role": "armonia",
+      "name": "Voice Oohs (combined choir)",
+      "sounds": [
+        "voice_oohs_fluid"
+      ],
+      "fx": "# legato 2.0 # room 0.9 # size 0.95 # gain 0.55 # lpf 1800 # pan 0.35, n \"<e4 c4 d4 e4>\" # legato 2.0 # room 0.9 # size 0.95 # gain 0.5 # lpf 2400 # pan 0.65, mask \"<f!2 t!2 f!4>\" $ n \"<c5 a4 b4 e5>\" # legato 1.8 # room 0.9 # size 0.95 # gain 0.9 # lpf 3500, mask \"<f!4 t!2 f!2>\" $ n \"<[e4 c4] [c4 a3",
+      "groove": ""
+    },
+    {
+      "role": "percusion",
+      "name": "Sea Waves",
+      "sounds": [
+        "seashore_musyng"
+      ],
+      "fx": "# gain 0.08 # room 0.6 # size 0.85 # speed 0.5",
+      "groove": "s \"seashore_musyng\" # gain 0.08 # room 0.6 # size 0.85 # speed 0.5"
+    }
+  ],
+  "forma": [],
+  "from_song": "Gentle background waves",
+  "literal": [
+    {
+      "id": "d1",
+      "name": "Chillout Beat",
+      "kind": "percusion",
+      "code": "stack [s \"808bd ~ ~ ~ ~ 808bd ~ ~\" # gain 1.25, s \"~ ~ rm ~ ~ ~ rm ~\" # gain 1.1 # room 0.4, s \"hh*8\" # gain (range 0.85 1.05 $ fast 2 sine) # hpf 4000 # pan 0.6]"
+    },
+    {
+      "id": "d2",
+      "name": "Childhood Piano (early)",
+      "kind": "melodia",
+      "code": "mask \"<t!24 f!24>\" $ n \"a3 ~ ~ ~ c5 ~ ~ ~ e5 ~ ~ ~ a5 ~ e6 ~\" # s \"salamander_grand\" # room 0.8 # size 0.9 # gain 0.6 # legato 1.1"
+    },
+    {
+      "id": "d3",
+      "name": "Open Window",
+      "kind": "textura",
+      "code": "s \"birds\" # gain 0.03 # room 0.6 # size 0.7 # speed 0.6"
+    },
+    {
+      "id": "d4",
+      "name": "Morning Bass",
+      "kind": "bajo",
+      "code": "mask \"<t!40 f!8>\" $ n \"a2 ~ ~ ~ ~ ~ ~ ~\" # s \"steinway_b\" # lpf 380 # gain 0.1 # room 0.6 # size 0.85 # legato 1.2"
+    },
+    {
+      "id": "d5",
+      "name": "Brushed Guitar",
+      "kind": "melodia",
+      "code": "mask \"<t!40 f!8>\" $ n \"e4 ~ ~ a4 ~ ~ <c5 ~> ~\" # s \"ts_pluck\" # room 0.6 # size 0.7 # gain 0.7 # legato 0.8 # delay 0.15 # delaytime 0.3 # delayfeedback 0.3"
+    },
+    {
+      "id": "d6",
+      "name": "Wind Swell",
+      "kind": "textura",
+      "code": "mask \"<t!40 f!8>\" $ whenmod 16 12 (# gain 0.5) $ s \"wind\" # gain 0.015 # room 0.7 # size 0.8 # speed 0.5"
+    },
+    {
+      "id": "d7",
+      "name": "d7",
+      "kind": "melodia",
+      "code": "mask \"<f!8 t!32 f!8>\" $ n \"~ <e5 d5 c5 b4> ~ ~ <g5 a5 f5 e5> ~ <e5 g5 a5 c6> ~\" # s \"vibraphone_soft\" # room 0.85 # size 0.9 # gain 1.0 # legato 1.1"
+    },
+    {
+      "id": "d8",
+      "name": "Warm Pad",
+      "kind": "armonia",
+      "code": "mask \"<f!16 t!24 f!8>\" $ n \"<[a3,c4,e4] [a3,c4,e4] [g3,b3,d4] [a3,c4,e4]>\" # s \"pad_2_warm_fluid\" # legato 1.5 # lpf 1000 # room 0.9 # size 0.95 # gain 0.06"
+    },
+    {
+      "id": "d9",
+      "name": "d9",
+      "kind": "melodia",
+      "code": "mask \"<f!24 t!24>\" $ n \"~ <c5 e5 g5 a4> <a4 g4 b4 e4> ~ <e5 d5 f5 g5> ~ [<c5 e5> <b4 g4>] ~\" # s \"salamander_grand\" # room 0.8 # size 0.9 # gain 0.65 # legato 1.0"
+    },
+    {
+      "id": "d10",
+      "name": "Cello Answer",
+      "kind": "melodia",
+      "code": "mask \"<f!12 t!28 f!8>\" $ n \"e3 ~ ~ ~ g3 ~ ~ ~\" # s \"vsco_cellos_arco\" # room 0.85 # size 0.95 # gain 0.9 # legato 1.4"
+    },
+    {
+      "id": "d11",
+      "name": "Horn Breath",
+      "kind": "armonia",
+      "code": "mask \"<f!20 t!20 f!8>\" $ n \"a3 ~ ~ ~ ~ ~ ~ ~\" # s \"french_horn_fluid\" # room 0.9 # size 0.95 # gain 0.4 # legato 1.8"
+    },
+    {
+      "id": "d12",
+      "name": "Voice Oohs (bar 29)",
+      "kind": "melodia",
+      "code": "mask \"<f!16>\" $ n \"a4 ~ ~ ~ e5 ~ ~ ~\" # s \"voice_oohs_fluid\" # room 0.9 # size 0.95 # gain 1.45 # legato 1.6 # lpf 450"
+    }
+  ],
+  "id": "gentle-background-waves"
+}
