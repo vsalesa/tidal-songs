@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "name": "B — Flam ghost (off 0.05)",
+  "genre": "",
+  "bpm": 98,
+  "key": "C",
+  "description": "Every note gets a ghost copy 1/20th of a cycle later at low volume — the classic flamenco golpe ghost hit.",
+  "roles": [
+    {
+      "role": "percusion",
+      "name": "Claves",
+      "sounds": [
+        "claves"
+      ],
+      "fx": "# gain 0.8",
+      "groove": "n \"[0 ~] [0 0]\" # s \"claves\" # gain 0.8"
+    },
+    {
+      "role": "armonia",
+      "name": "Nylon Guitar",
+      "sounds": [
+        "acoustic_guitar_nylon_fluid"
+      ],
+      "fx": "# legato 0.85 # gain 0.95",
+      "groove": ""
+    },
+    {
+      "role": "bajo",
+      "name": "Bass",
+      "sounds": [
+        "acoustic_bass_fluid"
+      ],
+      "fx": "# legato 0.8 # gain 1.0",
+      "groove": ""
+    },
+    {
+      "role": "melodia",
+      "name": "Melody random",
+      "sounds": [
+        "acoustic_guitar_nylon_fluid"
+      ],
+      "fx": "# gain 0.4)) $ sometimesBy 0.22 (fast 2 . ( # gain 1.15)) $ sometimesBy 0.15 (slow 2 . ( # gain 0.72)) $ randcat [note \"[[e5 fs5 e5] d5 c5 [b4 c5 b4] a4 ~]\" # legato 0.62 # gain 0.9 # room 0.2, note \"[e5 d5 c5 b4 a4 b4 c5 ~]\" # legato 0.65 # gain 0.88 # room 0.2, note \"[[e5 e5 e5] d5 [c5 c5 c5] b4]\"",
+      "groove": ""
+    },
+    {
+      "role": "percusion",
+      "name": "Shaker",
+      "sounds": [
+        "claps_vcsl"
+      ],
+      "fx": "",
+      "groove": "n \"0*8\" # s \"claps_vcsl\""
+    },
+    {
+      "role": "textura",
+      "name": "Harmonics",
+      "sounds": [
+        "guitar_harmonics_fluid"
+      ],
+      "fx": "# gain 0.3 # room 0.5 # size 0.7",
+      "groove": ""
+    },
+    {
+      "role": "percusion",
+      "name": "Palmas vivas",
+      "sounds": [
+        "cajon"
+      ],
+      "fx": "# speed 0.78 # gain (range 0.6 1.0 rand) # room (range 0.12 0.3 rand)",
+      "groove": "sometimesBy 0.35 (slow 1.5) $ degradeBy 0.12 $ n \"<[0 0 ~ 0 0 0 0 ~ 0 0 ~ [0 0 0 0 0 0 0 0]] [0 ~ 0 ~ 0 ~ 0 ~] [0 0 ~ 0 0 0 0 ~ 0 0 ~ [0 0 0 0 0 0 0 0]] [0 0 0 0 0 0 ~ 0 0 0 0 0 0 0 0 ~]>\" # s \"cajon\" # speed 0.78 # gain (range 0.6 1.0 rand) # room (range 0.12 0.3 rand)"
+    },
+    {
+      "role": "percusion",
+      "name": "Cajón",
+      "sounds": [
+        "cajon"
+      ],
+      "fx": "# speed 0.75 # gain (range 0.65 1.0 rand) # room (range 0.15 0.25 rand)",
+      "groove": "sometimesBy 0.25 (slow 1.5) $ n \"<[0 ~ 1 ~] [0 ~ 2 ~] [0 2 1 2] [0 2 ~ 1 2 ~ 1 ~ 1 ~ 1 ~]>\" # s \"cajon\" # speed 0.75 # gain (range 0.65 1.0 rand) # room (range 0.15 0.25 rand)"
+    },
+    {
+      "role": "melodia",
+      "name": "Counter always",
+      "sounds": [
+        "acoustic_guitar_nylon_musyng"
+      ],
+      "fx": "# gain 0.35) $ note \"<[~ a4 ~ c5 ~ e5 ~@2] [~ g4 ~ b4 ~ d5 ~@2] [~ f4 ~ a4 ~ c5 ~@2] [~ e4 ~ gs4 ~ b4 ~@2]>\" # legato 0.8 # gain 0.5 # room 0.3 # pan 0.4",
+      "groove": ""
+    }
+  ],
+  "forma": [],
+  "from_song": "B — Flam ghost (off 0.05)",
+  "literal": [
+    {
+      "id": "d1",
+      "name": "Claves",
+      "kind": "percusion",
+      "code": "n \"[0 ~] [0 0]\" # s \"claves\" # gain 0.8"
+    },
+    {
+      "id": "d2",
+      "name": "Nylon Guitar",
+      "kind": "armonia",
+      "code": "note \"<[a3,c4,e4] [g3,b3,d4] [f3,a3,c4] [e3,gs3,b3,d4]>\" # s \"acoustic_guitar_nylon_fluid\" # legato 0.85 # gain 0.95"
+    },
+    {
+      "id": "d3",
+      "name": "Bass",
+      "kind": "bajo",
+      "code": "note \"<a2 g2 f2 e2>\" # s \"acoustic_bass_fluid\" # legato 0.8 # gain 1.0"
+    },
+    {
+      "id": "d4",
+      "name": "Melody random",
+      "kind": "melodia",
+      "code": "sometimesBy 0.4 (off 0.05 (# gain 0.4)) $ sometimesBy 0.22 (fast 2 . (# gain 1.15)) $ sometimesBy 0.15 (slow 2 . (# gain 0.72)) $ randcat [note \"[[e5 fs5 e5] d5 c5 [b4 c5 b4] a4 ~]\" # s \"acoustic_guitar_nylon_fluid\" # legato 0.62 # gain 0.9 # room 0.2, note \"[e5 d5 c5 b4 a4 b4 c5 ~]\" # s \"acoustic_guitar_nylon_fluid\" # legato 0.65 # gain 0.88 # room 0.2, note \"[[e5 e5 e5] d5 [c5 c5 c5] b4]\" # s \"acoustic_guitar_nylon_fluid\" # legato 0.5 # gain 0.9 # room 0.2, note \"[[e5 fs5 e5] d5 c5 b4 a4 ~]\" # s \"acoustic_guitar_nylon_fluid\" # legato 0.62 # gain 0.9 # room 0.2]"
+    },
+    {
+      "id": "d5",
+      "name": "Shaker",
+      "kind": "percusion",
+      "code": "n \"0*8\" # s \"claps_vcsl\""
+    },
+    {
+      "id": "d6",
+      "name": "Harmonics",
+      "kind": "textura",
+      "code": "n \"<a5 e5>\" # s \"guitar_harmonics_fluid\" # gain 0.3 # room 0.5 # size 0.7"
+    },
+    {
+      "id": "d7",
+      "name": "Palmas vivas",
+      "kind": "percusion",
+      "code": "sometimesBy 0.35 (slow 1.5) $ degradeBy 0.12 $ n \"<[0 0 ~ 0 0 0 0 ~ 0 0 ~ [0 0 0 0 0 0 0 0]] [0 ~ 0 ~ 0 ~ 0 ~] [0 0 ~ 0 0 0 0 ~ 0 0 ~ [0 0 0 0 0 0 0 0]] [0 0 0 0 0 0 ~ 0 0 0 0 0 0 0 0 ~]>\" # s \"cajon\" # speed 0.78 # gain (range 0.6 1.0 rand) # room (range 0.12 0.3 rand)"
+    },
+    {
+      "id": "d8",
+      "name": "Cajón",
+      "kind": "percusion",
+      "code": "sometimesBy 0.25 (slow 1.5) $ n \"<[0 ~ 1 ~] [0 ~ 2 ~] [0 2 1 2] [0 2 ~ 1 2 ~ 1 ~ 1 ~ 1 ~]>\" # s \"cajon\" # speed 0.75 # gain (range 0.65 1.0 rand) # room (range 0.15 0.25 rand)"
+    },
+    {
+      "id": "d9",
+      "name": "Counter always",
+      "kind": "melodia",
+      "code": "off 0.05 (# gain 0.35) $ note \"<[~ a4 ~ c5 ~ e5 ~@2] [~ g4 ~ b4 ~ d5 ~@2] [~ f4 ~ a4 ~ c5 ~@2] [~ e4 ~ gs4 ~ b4 ~@2]>\" # s \"acoustic_guitar_nylon_musyng\" # legato 0.8 # gain 0.5 # room 0.3 # pan 0.4"
+    }
+  ],
+  "id": "b-flam-ghost-off-005"
+}
