@@ -1,20 +1,72 @@
 {
-  "name": "suspiros-de-espana-antonio-alvarez-alonso",
-  "bpm": 196,
+  "name": "flamenco",
+  "bpm": 98,
   "tracks": [
     {
       "id": "d1",
-      "name": "track1",
-      "kind": "armonia",
-      "code": "note \"<[cs4 [a4,cs5,e5] b3 a3] [af3 [af4,d5,e5] e3 [af4,d5,e5]] [[a3 [a4,cs5,e5]]*2] [[fs3 [a4,cs5,fs5]]*2]>\" # s \"acoustic_guitar_nylon_fluid\" # legato 1",
+      "name": "Claves",
+      "kind": "percusion",
+      "code": "n \"[0 ~] [0 0]\" # s \"claves\" # gain 0.8",
       "muted": false
     },
     {
       "id": "d2",
-      "name": "track2",
+      "name": "Nylon Guitar",
       "kind": "armonia",
-      "code": "note \"<[a3,cs5,e5,a5] [e3,d5,e5,af5,b5] ~ ~>\" # s \"acoustic_guitar_steel_fluid\" # legato 1",
+      "code": "note \"<[a3,c4,e4] [g3,b3,d4] [f3,a3,c4] [e3,gs3,b3,d4]>\" # s \"acoustic_guitar_nylon_fluid\" # legato 0.85 # gain 0.95",
+      "muted": false,
+      "fromScore": "d2"
+    },
+    {
+      "id": "d3",
+      "name": "Bass",
+      "kind": "bajo",
+      "code": "note \"<a2 g2 f2 e2>\" # s \"acoustic_bass_fluid\" # legato 0.8 # gain 1.0",
+      "muted": false,
+      "fromScore": "d3"
+    },
+    {
+      "id": "d4",
+      "name": "Melody random",
+      "kind": "melodia",
+      "code": "every 4 (fast 1.4 . (# gain 1.05)) $ every 7 (slow 1.5 . (# gain 0.75)) $ slow 5 $ randcat [note \"[e5 d5 c5 b4 a4 ~ b4 c5 d5 e5 fs5 e5 d5 c5 b4 a4 gs4 a4 b4 c5 d5 e5 ~]\" # s \"acoustic_guitar_nylon_fluid\" # legato 0.65 # gain 0.9 # room 0.2, note \"[a5 g5 f5 e5 d5 c5 b4 a4 ~ b4 c5 d5 e5 d5 c5 b4 ~ a4 gs4 a4 b4 c5 ~]\" # s \"acoustic_guitar_nylon_fluid\" # legato 0.62 # gain 0.9 # room 0.2, note \"[a4 b4 c5 d5 e5 d5 c5 b4 a4 ~ gs4 a4 b4 c5 d5 e5 fs5 g5 a5 g5 f5 e5 d5 ~]\" # s \"acoustic_guitar_nylon_fluid\" # legato 0.65 # gain 0.88 # room 0.2, note \"[e5 d5 c5 b4 ~ a4 ~ gs4 a4 b4 c5 ~ d5 e5 d5 c5 b4 ~ a4 gs4 a4 b4 ~]\" # s \"acoustic_guitar_nylon_fluid\" # legato 0.68 # gain 0.9 # room 0.2, note \"[[a5 g5 f5] e5 d5 ~ c5 b4 a4 ~ gs4 a4 b4 c5 d5 ~ e5 fs5 e5 ~ d5 c5 b4 ~]\" # s \"acoustic_guitar_nylon_fluid\" # legato 0.65 # gain 0.88 # room 0.2]",
       "muted": false
+    },
+    {
+      "id": "d5",
+      "name": "Shaker",
+      "kind": "percusion",
+      "code": "n \"0*8\" # s \"claps_vcsl\"",
+      "muted": false
+    },
+    {
+      "id": "d6",
+      "name": "Harmonics",
+      "kind": "textura",
+      "code": "n \"<a5 e5>\" # s \"guitar_harmonics_fluid\" # gain 0.3 # room 0.5 # size 0.7",
+      "muted": false
+    },
+    {
+      "id": "d7",
+      "name": "Palmas vivas",
+      "kind": "percusion",
+      "code": "sometimesBy 0.35 (slow 1.5) $ degradeBy 0.12 $ n \"<[0 0 ~ 0 0 0 0 ~ 0 0 ~ [0 0 0 0 0 0 0 0]] [0 ~ 0 ~ 0 ~ 0 ~] [0 0 ~ 0 0 0 0 ~ 0 0 ~ [0 0 0 0 0 0 0 0]] [0 0 0 0 0 0 ~ 0 0 0 0 0 0 0 0 ~]>\" # s \"cajon\" # speed 0.78 # gain (range 0.6 1.0 rand) # room (range 0.12 0.3 rand)",
+      "muted": false
+    },
+    {
+      "id": "d8",
+      "name": "Cajón",
+      "kind": "percusion",
+      "code": "sometimesBy 0.25 (slow 1.5) $ n \"<[0 ~ 1 ~] [0 ~ 2 ~] [0 2 1 2] [0 2 ~ 1 2 ~ 1 ~ 1 ~ 1 ~]>\" # s \"cajon\" # speed 0.75 # gain (range 0.65 1.0 rand) # room (range 0.15 0.25 rand)",
+      "muted": false
+    },
+    {
+      "id": "d9",
+      "name": "Counter always",
+      "kind": "melodia",
+      "code": "note \"<[~ a4 ~ c5 ~ e5 ~@2] [~ g4 ~ b4 ~ d5 ~@2] [~ f4 ~ a4 ~ c5 ~@2] [~ e4 ~ gs4 ~ b4 ~@2]>\" # s \"acoustic_guitar_nylon_musyng\" # legato 0.8 # gain 0.5 # room 0.3 # pan 0.4",
+      "muted": false,
+      "fromScore": "d9"
     }
   ],
   "projectId": "p1795717888436"
