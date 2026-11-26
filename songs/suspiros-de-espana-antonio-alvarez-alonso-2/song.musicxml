@@ -9,7 +9,7 @@
       <software>Tidal Studio</software>
     </encoding>
     <miscellaneous>
-      <miscellaneous-field name="tidal-studio">{"version": 1, "parts": {"d2": {"track": "d2", "sound": "acoustic_guitar_nylon_fluid", "role": "armonia", "fx": "# legato 0.85 # gain 0.95"}, "d3": {"track": "d3", "sound": "acoustic_bass_fluid", "role": "bajo", "fx": "# legato 0.8 # gain 1.0"}, "melodia": {"track": null, "sound": "acoustic_guitar_nylon_fluid", "role": "melodia", "fx": "# legato 0.65 # gain 0.9 # room 0.2"}, "d9": {"track": "d9", "sound": "acoustic_guitar_nylon_musyng", "role": "melodia", "fx": "# legato 0.8 # gain 0.5 # room 0.3 # pan 0.4"}}}</miscellaneous-field>
+      <miscellaneous-field name="tidal-studio">{"version": 1, "parts": {"d2": {"track": null, "sound": "acoustic_guitar_nylon_fluid", "role": "armonia", "fx": "# legato 0.85 # gain 0.95"}, "d3": {"track": null, "sound": "acoustic_bass_fluid", "role": "bajo", "fx": "# legato 0.8 # gain 1.0"}, "melodia": {"track": null, "sound": "acoustic_guitar_nylon_fluid", "role": "melodia", "fx": "# legato 0.65 # gain 0.9 # room 0.2"}, "d9": {"track": "d9", "sound": "acoustic_guitar_nylon_musyng", "role": "melodia", "fx": "# legato 0.8 # gain 0.5 # room 0.3 # pan 0.4"}, "d16": {"track": null, "sound": "overdriven_guitar_fluid", "role": "melodia", "fx": "# legato 1.8 # gain 1.2 # lpf 3200 # room 0.4 # size 0.75 # delay 0.35 # delaytime 0.306 # delayfeedback 0.42 # pan 0.7"}}}</miscellaneous-field>
     </miscellaneous>
   </identification>
   <part-list>
@@ -28,6 +28,10 @@
     <score-part id="P4">
       <part-name>Counter always</part-name>
       <part-abbreviation>d9</part-abbreviation>
+    </score-part>
+    <score-part id="P5">
+      <part-name>Electric overdrive answer</part-name>
+      <part-abbreviation>d16</part-abbreviation>
     </score-part>
   </part-list>
   <part id="P1">
@@ -2682,6 +2686,67 @@
         <duration>252</duration>
         <voice>1</voice>
         <type>quarter</type>
+      </note>
+    </measure>
+  </part>
+  <part id="P5">
+    <measure number="1">
+      <attributes>
+        <divisions>252</divisions>
+        <key>
+          <fifths>0</fifths>
+          <mode>major</mode>
+        </key>
+        <time>
+          <beats>4</beats>
+          <beat-type>4</beat-type>
+        </time>
+        <clef>
+          <sign>G</sign>
+          <line>2</line>
+        </clef>
+      </attributes>
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>1008</duration>
+        <voice>1</voice>
+        <type>whole</type>
+      </note>
+    </measure>
+    <measure number="2">
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>1008</duration>
+        <voice>1</voice>
+        <type>whole</type>
+      </note>
+    </measure>
+    <measure number="3">
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>1008</duration>
+        <voice>1</voice>
+        <type>whole</type>
+      </note>
+    </measure>
+    <measure number="4">
+      <note>
+        <pitch>
+          <step>B</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>1008</duration>
+        <voice>1</voice>
+        <type>whole</type>
       </note>
     </measure>
   </part>
