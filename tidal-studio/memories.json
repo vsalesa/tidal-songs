@@ -2,6 +2,16 @@
   "version": 2,
   "memories": [
     {
+      "uid": "dcdb4a64bbbc4fe6",
+      "scope": "global",
+      "scope_key": "",
+      "text": "The idea in flamenco is randmly playing clap sequences with randomly playing guitar punteo sequences low pitch high pitch slower quicker but never stop no silence at all",
+      "text_en": "",
+      "subject": "",
+      "source": "chat",
+      "evidence": 1
+    },
+    {
       "uid": "2063b6f6490b494e",
       "scope": "song",
       "scope_key": "p1795716127122",
